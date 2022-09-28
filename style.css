@@ -4,7 +4,14 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: 'Source Sans Pro', Helvetica, Arial, Lucida, sans-serif;
+    scrollbar-width: none; 
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+  
   header{
     min-width: 100%;
     display: flex;
@@ -51,7 +58,21 @@
     transform: scaleX(1);
   }
 
+body{
+  overflow: hidden;
+  scrollbar-width: none; 
 
+}
+main{
+  overflow: hidden;
+  scrollbar-width: none; 
+
+}
+.container{
+  overflow: hidden;
+  scrollbar-width: none; 
+
+}
 
 
 .headbanner{
@@ -68,17 +89,19 @@
   text-align: left;
 }
 .headbanner div h1{
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: left;
+  
+  
 }
 .headbanner div h2{
   font-size: 2rem;
   text-align: left;
 }
 .headbanner div p{
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: left;
-  padding-top: 10px;
+  padding-top: 20px;
   width: 600px;
 }
 .headbanner div button{
@@ -97,14 +120,12 @@
   transition: ease-in-out 150ms;
 }
 .headbanner .banner{
-  width: 668px;
-  background-color: red;
-  box-shadow: #000000 10px 10px 10px;
-  border-radius: 20px;
+  margin-right: 90px;
 }
 .headbanner .banner img{
     width: 668px;
     border-radius: 20px;
+    margin: 20px;
 }
 
 
@@ -240,7 +261,7 @@
   background-color: #6f34dd;
   display: flex;
   flex-direction: row;
-  scale: 0.7;
+  
 }
 .newsletter_wrapper .newsletter_img{
   width: 50%;
@@ -322,8 +343,7 @@
 .club_details{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  float: left;
 }
 .club_details img{
   width: 200px;
@@ -336,6 +356,8 @@
   max-width: 500px;
   font-size: 1.3rem;
   padding: 10px;
+  text-align: left;
+  padding: 20px;
 }
 .club_details button{
   border-radius: 10px;
@@ -345,4 +367,6 @@
   color: #f9f9f9;
   padding: 10px;
   margin: 20px;
+  width: max-content;
+  cursor: pointer;
 }
