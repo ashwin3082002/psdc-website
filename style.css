@@ -71,9 +71,15 @@
   font-size: 5rem;
   text-align: left;
 }
-.headbanner div p{
+.headbanner div h2{
   font-size: 2rem;
   text-align: left;
+}
+.headbanner div p{
+  font-size: 1rem;
+  text-align: left;
+  padding-top: 10px;
+  width: 600px;
 }
 .headbanner div button{
   border-radius: 10px;
@@ -91,14 +97,13 @@
   transition: ease-in-out 150ms;
 }
 .headbanner .banner{
-  width: 400px;
-  height: 500px;
+  width: 668px;
   background-color: red;
   box-shadow: #000000 10px 10px 10px;
   border-radius: 20px;
 }
 .headbanner .banner img{
-    width: 400px;
+    width: 668px;
     border-radius: 20px;
 }
 
@@ -127,7 +132,7 @@
   margin: 20px auto;
 }
 .event{
-  width: max-content;
+  width: 950px;
   display: flex;
   flex-direction: row;
   margin: 20px auto;
@@ -135,11 +140,10 @@
   border-radius: 15px;
 }
 .event img{
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   background-color: red;
   box-shadow: #000000 10px 10px 10px;
-  border-radius: 50%;
   overflow: hidden;
   margin: 20px;
 }
@@ -154,7 +158,7 @@
   font-size: 3rem;
 }
 .event div button{
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: #6f34dd;
   color: #f9f9f9;
   border: none;
@@ -169,17 +173,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 20px;
 }
-.ourteam h1{
-  font-size: 3rem;
+.ourteam h2{
+  font-size: 2rem;
   padding: 10px;
+  background-color: #6f34dd;
+  color: #f9f9f9;
+  width: max-content;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 .ourteam .members{
   padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 40px auto;
   width: 100%;
 }
 .ourteam .members .member{
@@ -207,6 +217,9 @@
 }
 .ourteam .members .member div h1{
   font-size: 1.8rem;
+}
+.ourteam .members .member div h3{
+  font-size: 1.3rem;
 }
 .ourteam .members .member .teamsocials a{
   text-decoration: none;
@@ -298,7 +311,7 @@
   margin: 20px;
 }
 .club img{
-  width: 400px;
+  width: 500px;
   height: 500px;
   background-color: red;
   box-shadow: #000000 10px 10px 10px;
@@ -313,8 +326,8 @@
   align-items: center;
 }
 .club_details img{
-  width: 310px;
-  height: 200px;
+  width: 200px;
+  height: auto;
   border-radius: 0;
   background-color: transparent;
   box-shadow: none;
@@ -327,7 +340,7 @@
 .club_details button{
   border-radius: 10px;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: #6f34dd;
   color: #f9f9f9;
   padding: 10px;
