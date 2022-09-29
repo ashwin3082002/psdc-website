@@ -244,8 +244,9 @@ main{
 }
 .ourteam .members .member .teamsocials a{
   text-decoration: none;
-  color: #000000;
+  color: #f9f9f9;
   padding: 10px;
+  font-size: 20px;
 }
 
 
