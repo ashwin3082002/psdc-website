@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Redirection</title>
+      <meta http-equiv = "refresh" content = "url = https://verify.psdc.org.in/" />
+   </head>
+   <body>
+    <div style="text-align: center;">
+      <p><a href="https://verify.psdc.org.in/">Click Here</a>if not redirected...</p>
+    </div>
+   </body>
+</html>
