@@ -41,36 +41,29 @@
 
                     <a href="aboutus.html"><i class="bi bi-info-circle"></i> About Us</a>
     
-                    
+                    <img src="./menu-btn.jpg" alt="" class="menu-btn">
+ 
 
                 </div>
-
+    </div>
         </header>
 
-        <main>
-
-            <div class="headbanner">
-
-                <div>
-
+        <section class="bio">
+            <div class="main">
+                <img src="/assets/pani.png">
+                <div class="bio-text">
                     <h1>PANIMALAR</h1>
                     <h2>STUDENT DEVELOPMENT COMMUNITY</h2>
-
                     <p>Welcome to a place where people learn and share knowledge with everyone. A community which helps the student to grow their skills and career to create a bright future ahead.</p>
-
+                            
                 </div>
-
-                <div class="banner">
-
-                    <img src="/assets/pani.png" alt="">
-
-                </div>
-
             </div>
+        </section>
 
+        
            
-            
-            <div class="newsletter_wrapper">
+        <section class="news">  
+             <div class="newsletter_wrapper">
                 <div class="newsletter_img">
                     <img src="/assets/newsletter.jpg" alt="" style="width: 400px;">
                 </div>
@@ -87,11 +80,23 @@
                     </form>
 
                 </div>
-            </div>
+             </div>
+        </section>
 
-        </main>
+        <script>
+            const menubtn = document.querySelector('.menu-btn')
+            const navbar = document.querySelector('.navbar')
+    
+            menubtn.addEventListener('click',()=>{
+                navbar.classList.toggle('mobile-menu')
+            })
+    
+        
+            
+        </script>
+        
 
-    </div>
+    
 
 
 </body>
