@@ -1,4 +1,4 @@
- *{
+  *{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -7,9 +7,9 @@
     scrollbar-width: none; 
   }
 
-  ::-webkit-scrollbar {
+ /* ::-webkit-scrollbar {
     display: none;
-}
+}*/
 
   
   header{
@@ -24,6 +24,9 @@
   header img{
     width: 200px;
   }
+
+
+
   .navbar{
     overflow: hidden;
     display: flex;
@@ -58,7 +61,17 @@
     transform: scaleX(1);
   }
 
-body{
+
+  .menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*body{
   overflow: hidden;
   scrollbar-width: none; 
 
@@ -72,10 +85,10 @@ main{
   overflow: hidden;
   scrollbar-width: none; 
 
-}
+}*/
 
 
-.headbanner{
+/*.headbanner{
     width: 100vw;
     padding: 40px;
     padding-top: 50px;
@@ -119,14 +132,89 @@ main{
   scale: 1.08;
   transition: ease-in-out 150ms;
 }
-.headbanner .banner{
+.headbanner {
   margin-right: 90px;
 }
-.headbanner .banner img{
-    width: 668px;
-    border-radius: 20px;
-    margin: 20px;
+.headbanner img{ 
+  height: auto;
+  width: 668px;
+  border-radius: 20px;
+  margin: 20px;
+}*/
+
+
+
+/* Bio */
+
+.bio {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: white;
 }
+.bio .main img {
+  height: auto;
+  width: 600px;
+  max-width: 100%;
+
+}
+.bio-text {
+  width: 550px;
+  max-width: 100%;
+  padding: 0 10px;
+  border: 0px;
+}
+.main {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.bio-text h1 {
+  color: black;
+  font-size: 85px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  margin-left: 40px;
+}
+.bio-text h2 {
+  color: black;
+  text-transform: capitalize;
+  margin-left: 40px;
+}
+
+
+.bio-text p {
+  color: black;
+  text-align: center;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .events_wrapper{
@@ -257,11 +345,13 @@ main{
 
 .newsletter_wrapper{
   border-radius: 20px;
-  margin: 0 auto;
+  margin-bottom: 100px;
   width: 700px;
   background-color: #6f34dd;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  display: flex;
   
 }
 .newsletter_wrapper .newsletter_img{
@@ -370,4 +460,93 @@ main{
   margin: 20px;
   width: max-content;
   cursor: pointer;
+}
+
+/* index */
+
+@media only screen and (max-width: 843px) {
+  .menu-btn {
+    display: block;
+    color: whitesmoke;
+}
+.navbar{
+  padding: 0;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.navbar {
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background: white;
+  margin-top: -900px;
+  transition: all 0.5s ease;
+}
+.mobile-menu {
+  margin-top: 0px;
+}
+.navbar a{
+  margin: 30px auto;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .headbanner {
+    width: 100%;
+    height: 230%;
+    padding: 70px 0px;
+  }
+  .headbanner h1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    size: 5px;
+  }
+.headbanner img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 700px;
+  margin-right: 100px;
+  size: 100px;
+}
+}
+
+
+/* Bio */
+
+@media screen and (max-width: 1180px) {
+  .bio {
+      width: 100%;
+      height: 230%;
+      padding: 70px 0px;
+  }
+  .bio-text h1 {
+      font-size: 50px;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
 }
